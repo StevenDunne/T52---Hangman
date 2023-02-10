@@ -1,0 +1,100 @@
+.App {
+  margin:0;
+}
+/*styling for reset button*/
+.resetBtn {
+  border: 1px solid black;
+}
+/* turn header red */
+h1 {
+  color: red;
+}
+/* Flex box for the header container, use some -margin to move things up a little */
+.headerContainer {
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: -20px;
+}
+/* container with h1 & h3 in */
+.hContainer{
+  width: 80%;
+}
+/* the help btn */
+.helpBtn{
+  padding-left: 200px;
+  color: black
+}
+/* container from main.js */
+.mainContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+/* container for the word */
+.wordContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+/* individual letter block */
+.letterBlock {
+  width: auto;
+  padding: 10px 10px 0 10px;
+  border-bottom: 2px solid black;
+  margin-right: 10px;
+}
+/* letter inside the block */
+.letter {
+  font-size: 20px;
+}
+/* makes letters start as hidden */
+.hide {
+  display: none;
+}
+/* lay out the grid for the keyboard */
+.keyboardContainer {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  width: 80%;
+  margin: auto;
+}
+/* each individual key on the board, with a cool gradient */
+/* https://cssgradient.io/ */
+.key {
+  width: 95%;
+  height: 40px;
+  background: linear-gradient(132deg, rgba(0,57,53,1) 2%, rgba(145,145,145,1) 53%); 
+  color: white;
+}
+/* used for eliminating keys once they are used */
+.hidden {
+  background-color: black;
+  width: 95%;
+  height: 40px;
+  pointer-events: none;
+  text-decoration: line-through;
+}
+/* help container */
+.helpContainer {
+  margin: 10px;
+  height: 80vh;
+  font-size: 1.8rem;
+}
+/* close link - in the help box */
+.closeBtn {
+  text-decoration: underline;
+  color: black;
+}
+/* for win or lose */
+.endGameContainer {
+  height: 80vh;
+  text-align: center;
+  font-size: 50px;
+}
